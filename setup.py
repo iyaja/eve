@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="eve-optimizer", # Replace with your own username
-    version="0.0.2",
+    name="eve_optimizer", # Replace with your own username
+    version="0.0.3",
     author="Ajay Uppili Arasanipalai",
     author_email="ajayuppili@gmail.com",
     description="The EVer Evolving Optimizer",
