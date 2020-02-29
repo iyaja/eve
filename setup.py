@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="eve_optimizer", # Replace with your own username
-    version="0.0.3.5",
+    version="0.0.3.6",
     author="Ajay Uppili Arasanipalai",
     author_email="ajayuppili@gmail.com",
     description="The EVer Evolving Optimizer",
