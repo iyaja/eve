@@ -2,7 +2,7 @@
 
  2D Convex Surface             |  2D Non-Convex Surface          | 3D Surface with Saddle Point 
 :-------------------------:|:-------------------------:|:-------------------------:
-![](assets/convex_eve.gif)  |  ![](assets/non_convex_eve.gif) | ![](assets/3d_surface_eve.gif)
+![](images/convex_eve.gif)  |  ![](images/non_convex_eve.gif) | ![](images/3d_surface_eve.gif)
 
 EVE is a new optimizer library built on top of PyTorch that combines the best of multiple state-of-the-art optimizer algorithms into one flexible, infinitely customizable super-optimizer.
 
