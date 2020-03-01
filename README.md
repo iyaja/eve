@@ -4,9 +4,9 @@ EVE is a new optimizer library built on top of PyTorch that combines the best of
 
 The goal of EVE is not to provide one final, static optimizer, but rather an interface to a PyTorch optimizer that will continue to implement the latest, well-tested methods from modern research.
 
-In preliminary testing, the current implementation of EVE was able to beat Adam and other near state-of-the-art optimizers without a significant increase in compute time. Here are some inital results from training a ResNet18 on the ImageNette (s ubset of ImageNet that encompasses a few hard to classify classes) 5 epoch challenge.
+In preliminary testing, the current implementation of EVE was able to beat Adam and other near state-of-the-art optimizers without a significant increase in compute time. Here are some inital results from training a ResNet18 on the ImageNette (subset of ImageNet that encompasses a few hard to classify classes) 5 epoch challenge.
 
-### Adam
+### Adam (Final Accuracy = 40.00%)
 
 |epoch |	train_loss |	valid_loss |	accuracy |	time|
 |------|------------|------------|----------|-----|
@@ -16,7 +16,7 @@ In preliminary testing, the current implementation of EVE was able to beat Adam 
 |3 |	2.018234 |	1.866597 |	0.347261 |	00:35|
 |4 |	1.780924 |	1.732265 |	**0.400000** |	00:35|
 
-### EVE
+### EVE (Final Accuracy = 70.62%)
 
 |epoch |	train_loss |	valid_loss |	accuracy |	time|
 |------|------------|------------|----------|-----|
