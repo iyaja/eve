@@ -45,7 +45,7 @@ pip install eve-optimizer
 Then, the main EVE optimizer can be imported as follows:
 
 ```
-from eve.optimizers import eveo3
+from eve.optimizers import eve
 ```
 
 This will import a function that returns a `torch.optim.Optimizer` object, which can be used in the usual way.
