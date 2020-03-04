@@ -22,8 +22,8 @@ jobs:
         pip install setuptools wheel twine
     - name: Bump Versions
       uses: remorses/bump-version@js 
-      with:
-        prefix: v 
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Build
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
