@@ -3,9 +3,12 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open(".VERSION", "r") as ver:
+    version = ver.read()
+
 setuptools.setup(
     name="eve_optimizer", 
-    version="0.0.3",
+    version=version,
     author="Ajay Uppili Arasanipalai",
     author_email="ajayuppili@gmail.com",
     description="The EVer Evolving Optimizer",
