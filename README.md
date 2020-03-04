@@ -1,6 +1,6 @@
 # EVE: The EVer Evolving Deep Learning Optimizer
 
-![Upload Python Package](https://github.com/iyaja/eve/workflows/Upload%20Python%20Package/badge.svg)
+![Upload Python Package](https://github.com/iyaja/eve/workflows/Upload%20Python%20Package/badge.svg) [![HitCount](http://hits.dwyl.com/iyaja/eve.svg)](http://hits.dwyl.com/iyaja/eve)
 
 EVE is a new optimizer library built on top of PyTorch that combines the best of multiple state-of-the-art optimizer algorithms into one flexible, infinitely customizable super-optimizer.
 
