@@ -4,7 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 with open(".VERSION", "r") as ver:
-    version = ver.read()
+    version = ver.readlines()[-1]
+    print(version)
 
 setuptools.setup(
     name="eve_optimizer", 
