@@ -6,7 +6,9 @@ EVE is a new optimizer library built on top of PyTorch that combines the best of
 
 The goal of EVE is not to provide one final, static optimizer, but rather an interface to a PyTorch optimizer that will continue to implement the latest, well-tested methods from modern research.
 
-In preliminary testing, the current implementation of EVE was able to beat Adam and other near state-of-the-art optimizers without a significant increase in compute time. Here are some inital results from training a ResNet18 on the ImageNette (subset of ImageNet that encompasses a few hard to classify classes) 5 epoch challenge.
+The current implementation of EVE is able to beat Adam and other near state-of-the-art optimizers without a significant increase in compute time. Below are some inital results from EVE.
+
+## 5 Epoch Training Run on Imagenette with ResNet18
 
 ### Adam (Final Accuracy = 40.00%)
 
@@ -27,6 +29,28 @@ In preliminary testing, the current implementation of EVE was able to beat Adam 
 |2 |	1.526003 |	1.672156 |	0.501146 |	00:39
 |3 |	0.956125 |	0.949652 |	0.696306 |	00:39
 |4 |	0.567583 |	0.949395 |	**0.706242** |	00:39
+ 
+## 5 Epoch Training Run on CIFAR10 with ResNet18
+ 
+ ### Adam (Final Accuracy = 51.86%)
+ 
+|epoch |	train_loss |	valid_loss |	accuracy |	time|
+|------|------------|------------|----------|-----|
+|0 |	1.975239 |	1.939689 |	0.392900 |	00:46|
+|1 |	3.909453 |	5.174701 |	0.200900 |	00:47|
+|2 |	1.880459 |	2.725230 |	0.369800 |	00:47|
+|3 |	1.455202 |	3.867605 |	0.489100 |	00:46|
+|4 |	1.334342 |	8.826218 |	**0.518600** |	00:46|
+ 
+### EVE (Final Accuracy = 72.86%)
+
+|epoch |	train_loss |	valid_loss |	accuracy |	time|
+|------|------------|------------|----------|-----|
+|0 |	2.000495 |	1.659529 |	0.399000 |	01:23|
+|1 |	1.320091 |	1.335047 |	0.522200 |	01:23|
+|2 |	1.095541 |	1.465448 |	0.500100 |	01:24|
+|3 |	0.843848 |	0.877310 |	0.694000 |	01:23|
+|4 |	0.606318 |	0.797719 |	0.728600 |	01:24|
  
  Here are a few animations demonstrating EVE's convergence properties on simple functions:
 
